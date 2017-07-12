@@ -19,7 +19,13 @@ public class PlayButtonBehaviour : MonoBehaviour {
         {
             playButtonClicked();
         }
-	}
+        if (Input.GetButtonUp("Right")){
+            slider.nextFrame();
+        }
+        if (Input.GetButtonUp("Left")){
+            slider.prevFrame();
+        }
+    }
 
     public void playButtonClicked()
     {

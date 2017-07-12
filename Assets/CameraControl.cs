@@ -6,6 +6,7 @@ public class CameraControl : MonoBehaviour {
 
     public Vector3 origo;
     public float rotSpeed;
+    public ImportExportEditorBehaviour imExporter;
 
     private Vector3 currentMousePosition;
     private Vector3 deltaMousePosition;
@@ -37,8 +38,9 @@ public class CameraControl : MonoBehaviour {
             lastMousePosition = currentMousePosition;
             transform.position += transform.forward * rotSpeed*deltaMousePosition.y;
         }
+        transform.position += transform.forward * rotSpeed * Input.GetAxis("Mouse ScrollWheel")*100;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !imExporter.isShowing)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;

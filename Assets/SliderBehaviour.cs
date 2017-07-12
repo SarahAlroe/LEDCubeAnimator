@@ -44,6 +44,30 @@ public class SliderBehaviour : MonoBehaviour {
         ledCube.updateFrameCount((int)slider.maxValue);
     }
 
+    public void nextFrame() {
+        if (slider.value == slider.maxValue)
+        {
+            slider.value = slider.minValue;
+        }else
+        {
+            slider.value += 1;
+        }
+        updateValue();
+    }
+
+    public void prevFrame()
+    {
+        if (slider.value == slider.minValue)
+        {
+            slider.value = slider.maxValue;
+        }
+        else
+        {
+            slider.value -= 1;
+        }
+        updateValue();
+    }
+
     // Use this for initialization
     void Start () {
         currentTime = playInterval;

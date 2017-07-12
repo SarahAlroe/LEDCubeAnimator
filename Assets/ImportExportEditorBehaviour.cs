@@ -7,11 +7,11 @@ public class ImportExportEditorBehaviour : MonoBehaviour {
 
     public LEDCube cube;
 
-    int moveDistance = 800;
+    int moveDistance = 8000;
 
     bool isImporting = false;
 
-    bool isShowing = true;
+    public bool isShowing = true;
 
 	// Use this for initialization
 	void Start () {
