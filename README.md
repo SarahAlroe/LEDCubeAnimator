@@ -7,3 +7,10 @@ allowing quick copy-pasta addition or modification of animations.
 The user can import existing animations or create new ones, choose lit LEDs for each frame,  increase or decrease the frame count, and play the animation back before exporting.  
 
 The application can be downloaded for Windows, macOS and GNU/Linux from the [*releases*](https://github.com/SilasAlroe/LEDCubeAnimator/releases) tab, or accessed directly in the browser [*here*](https://silasalroe.github.io/LEDCubeAnimator/). Please note that copy-paste does not work in the web-release because of JS limitations. 
+
+**How to use:**  
+Left mouse button to click buttons and activate/deactivate 'LEDs'.  
+Right mouse button to rotate camera around the cube.  
+Middle mouse button or scroll to zoom the camera.  
+Space to start/stop playing the animation.  
+Left and right arrow buttons to step through the animation.
